@@ -1,0 +1,90 @@
+
+.container-contacto {
+    display: flex;
+    min-height: 85vh;
+    background-color: rgb(43, 41, 41);
+    
+        .container-contacto1 {
+            display: flex;
+            width: 50%;
+            position: relative;
+
+            
+
+                h2 {
+                    position: absolute;
+                    left: 20%;
+                    top: 10%;
+                    
+                }
+
+                .chat-contacto {
+                    position: absolute;
+                    left: 20%;
+                    top: 40%;
+                    width: 70%;
+                    height: 30%;
+
+                        h3 {
+                            margin: 5%;
+                        }
+
+                        i {
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 2%;
+                            color: $color-blanco;
+                            cursor: pointer;
+                            
+                            &:hover{
+                                color: $hover-header;
+                            }
+                        }
+
+
+                }
+        
+        }
+
+        .container-contacto2 {
+            display: flex;
+            width: 50%;
+            flex-direction: column;
+            position: relative;
+
+            .contacto2-cont {
+                position: absolute;
+                left: 25%;
+                top: 40%;
+                width: 50%;
+                text-align: center;
+
+                    .twitter {
+                        margin: 10px;
+                            h3 {
+                                margin-bottom: 5px;
+                            }
+                    }
+
+                    .mail {
+                        margin: 10px;
+                            h3 {
+                                margin-bottom: 5px;
+                            }
+                    }
+
+                    .llamada {
+                        margin: 10px;
+                            h3 {
+                                margin-bottom: 5px;
+                            }
+                    }
+
+                        .hover-contacto:hover {
+                            color: $hover-header;
+                        }
+            }    
+        
+        }
+}
+

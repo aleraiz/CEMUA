@@ -1,0 +1,83 @@
+.principal {
+    background-image: url(../img/fotoPortadaIndex.jpg);
+    min-height: 700px;
+    background-position: center center;
+    background-size: cover ;
+    position: relative;
+}
+
+    .principal__div {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        max-width: 40%;
+        
+    }
+
+    .principal__subtitulo {
+        margin: 20px;
+        cursor: pointer;
+        transition: 2s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        
+    }
+
+    .principal__enlace {
+        text-align: center;
+        
+
+        &:hover{
+            color: $hover-header;
+        }
+    }
+
+.seccion {
+    display: flex;
+}
+
+    .seccion__img1 {
+        background-image: url(../img/img-uno.jpg);
+        min-height: 900px;
+        background-position: center center;
+        background-size: cover ;
+        flex-basis: 50%;
+        position: relative;
+
+    }
+
+        .seccion__enlace {
+            position: absolute;
+            right: 10%;
+            bottom: 5%;
+
+                &:hover {
+                    color: $hover-header;
+                    cursor: pointer;
+                }
+        }
+
+    .seccion__img2 {
+        background-image: url(../img/img-dos.jpg);
+        min-height: 900px;
+        background-position: center center;
+        background-size: cover ;
+        flex-basis: 50%;
+        position: relative;
+    }
+
+        .seccion__enlace {
+            position: absolute;
+            right: 10%;
+            bottom: 5%;
+
+            &:hover {
+                color: $hover-header;
+                cursor: pointer;
+            }
+        }

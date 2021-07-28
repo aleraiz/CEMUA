@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// VARIABLES
+$titulos-estilos: 'Encode Sans SC', sans-serif;
+$textos-estilos: 'Roboto', sans-serif;
+$color-blanco: whitesmoke;
+$hover-header: pink;
+$color-negro: black;
+$ancho: 500px;
+$hover-contacto: rgb(85, 70, 70);
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $titulos-estilos;
+    color: $color-blanco;
+}
+
+p, a, {
+    font-family: $textos-estilos;
+    color: $color-blanco;
+}
+
+li {
+    font-family: $textos-estilos;   
+}
+
+.texto-productos {
+    color: $color-negro
+}

@@ -1,0 +1,49 @@
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px ;
+}
+
+    .footer__derechos {
+        flex-basis: 20%;
+    }
+
+
+    .footer__menu {
+        flex-basis: 40%;
+        
+    }
+
+        .footer__lista {
+            display: flex;
+            justify-content: space-between;
+        }
+
+            .footer__enlaces:hover {
+                color: $hover-header;
+            }
+
+
+    .footer__redes {
+        flex-basis: 10%;
+        
+        
+        
+    }
+
+        .footer__lista2 {
+            display: flex;
+            justify-content: space-evenly;
+        
+        }
+
+            .footer__facebook:hover {
+                color: $hover-header;
+                transform: scale(1.2);
+            }
+
+            .footer__instagram:hover {
+                color: $hover-header;
+                transform: scale(1.2);
+            }
