@@ -1,15 +1,30 @@
-.container__productos {
+.container__mensaje {
     display: flex;
-    padding-top: 3.125rem;
+    margin: 1rem 0;
+        h2 {
+        color: black;
+        font-size: 2rem;
+        margin: auto;
+        }
+        p {
+            color: black;
+            font-size: 1.5rem;
+            margin: auto;
+        }
+}
+
+.container__liquidacion {
+    display: flex;
     justify-content: space-around;
     
     .container__filtros {
         padding-left: 2.5rem;
-        padding-top: 1.25rem;
+        padding-top: 2.5rem;
         flex-basis: 20%;
 
             .texto-productos {
-                margin-bottom: 1.25rem;
+                font-size: 1.5rem;
+                margin-bottom: 2.5rem;
                 color: black;
             }
 
@@ -29,7 +44,7 @@
 
         .producto-container {
             width: 30%;
-            margin-bottom: 1.25rem;
+            margin-bottom: 2.5rem;
             display: flex;
             flex-direction: column;
             cursor: pointer;

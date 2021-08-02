@@ -133,7 +133,7 @@ header {
   position: absolute;
   right: 0;
   bottom: 0;
-  padding: 20px;
+  padding: 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,7 +144,7 @@ header {
 }
 
 .principal__subtitulo {
-  margin: 20px;
+  margin: 1.25rem;
   cursor: pointer;
   -webkit-transition: 2s;
   transition: 2s;
@@ -225,7 +225,7 @@ footer {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .footer__derechos {
@@ -281,26 +281,26 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 50px;
+  padding-top: 3.125rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
 .container__productos .container__filtros {
-  padding-left: 40px;
-  padding-top: 20px;
+  padding-left: 2.5rem;
+  padding-top: 1.25rem;
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
 }
 
 .container__productos .container__filtros .texto-productos {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   color: black;
 }
 
 .container__productos .container__filtros li {
-  font-size: 20px;
-  margin-top: 5px;
+  font-size: 1.25rem;
+  margin-top: 0.3125rem;
   cursor: pointer;
 }
 
@@ -319,7 +319,7 @@ footer {
 
 .container__productos .catalogo .producto-container {
   width: 30%;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,8 +331,8 @@ footer {
 }
 
 .container__productos .catalogo .producto-container:hover {
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
 }
 
 .container__productos .catalogo .producto-container img {
@@ -350,21 +350,21 @@ footer {
 }
 
 .container__productos .catalogo .producto-container h3 {
-  margin: 15px;
+  margin: 1rem;
 }
 
 .container__productos .catalogo .producto-container h4 {
-  margin-left: 15px;
-  margin-bottom: 2px;
+  margin-left: 1rem;
+  margin-bottom: 0.125rem;
 }
 
 .container__productos .catalogo .producto-container button {
   float: right;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin-right: 0.625rem;
+  margin-bottom: 0.625rem;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  padding: 3px;
+  padding: 0.1875rem;
   cursor: pointer;
 }
 
@@ -444,34 +444,34 @@ footer {
 }
 
 .container-contacto .container-contacto2 .contacto2-cont .twitter {
-  margin: 10px;
-  padding: 20px 0;
-  border-bottom: 2px solid whitesmoke;
-  border-top: 2px solid whitesmoke;
+  margin: 0.625rem;
+  padding: 1.25rem 0;
+  border-bottom: 0.125rem solid whitesmoke;
+  border-top: 0.125rem solid whitesmoke;
 }
 
 .container-contacto .container-contacto2 .contacto2-cont .twitter h3 {
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
 }
 
 .container-contacto .container-contacto2 .contacto2-cont .mail {
-  margin: 10px;
-  padding: 20px 0;
-  border-bottom: 2px solid whitesmoke;
+  margin: 0.625rem;
+  padding: 1.25rem 0;
+  border-bottom: 0.125rem solid whitesmoke;
 }
 
 .container-contacto .container-contacto2 .contacto2-cont .mail h3 {
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
 }
 
 .container-contacto .container-contacto2 .contacto2-cont .llamada {
-  margin: 10px;
-  padding: 20px 0;
-  border-bottom: 2px solid whitesmoke;
+  margin: 0.625rem;
+  padding: 1.25rem 0;
+  border-bottom: 0.125rem solid whitesmoke;
 }
 
 .container-contacto .container-contacto2 .contacto2-cont .llamada h3 {
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
 }
 
 .container-contacto .container-contacto2 .contacto2-cont .hover-contacto:hover {
@@ -479,6 +479,228 @@ footer {
 }
 
 .container-ayuda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #2b2929;
+  min-height: 85vh;
+}
+
+.container-ayuda .container-ayuda1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  position: relative;
+}
+
+.container-ayuda .container-ayuda1 h2 {
+  position: absolute;
+  left: 20%;
+  top: 10%;
+}
+
+.container-ayuda .container-ayuda1 .rastrear-pedido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  width: 70%;
+  height: 30%;
+}
+
+.container-ayuda .container-ayuda1 .rastrear-pedido h3 {
+  text-align: center;
+}
+
+.container-ayuda .container-ayuda1 .rastrear-pedido form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+
+.container-ayuda .container-ayuda1 .rastrear-pedido form .campos-formulario {
+  height: 2rem;
+  padding: 0 1rem;
+  letter-spacing: .06rem;
+}
+
+.container-ayuda .container-ayuda1 .rastrear-pedido form .rastrear-pedido-boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-ayuda .container-ayuda1 .rastrear-pedido form .rastrear-pedido-boton .boton-formulario {
+  margin-top: 1rem;
+  height: 1.8rem;
+  border-radius: .9rem;
+  width: 10rem;
+  letter-spacing: .06rem;
+}
+
+.container-ayuda .container-ayuda2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.container-ayuda .container-ayuda2 .container-ayuda2-cambios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  width: 70%;
+  height: 30%;
+}
+
+.container-ayuda .container-ayuda2 .cambios-devoluciones {
+  margin-top: 1rem;
+}
+
+.container-ayuda .container-ayuda2 .cambios-devoluciones p {
+  margin-bottom: .5rem;
+}
+
+.container__mensaje {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem 0;
+}
+
+.container__mensaje h2 {
+  color: black;
+  font-size: 2rem;
+  margin: auto;
+}
+
+.container__mensaje p {
+  color: black;
+  font-size: 1.5rem;
+  margin: auto;
+}
+
+.container__liquidacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container__liquidacion .container__filtros {
+  padding-left: 2.5rem;
+  padding-top: 2.5rem;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+.container__liquidacion .container__filtros .texto-productos {
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+  color: black;
+}
+
+.container__liquidacion .container__filtros li {
+  font-size: 1.25rem;
+  margin-top: 0.3125rem;
+  cursor: pointer;
+}
+
+.container__liquidacion .catalogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+}
+
+.container__liquidacion .catalogo .producto-container {
+  width: 30%;
+  margin-bottom: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+}
+
+.container__liquidacion .catalogo .producto-container:hover {
+  -webkit-box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.container__liquidacion .catalogo .producto-container img {
+  width: 80%;
+  height: 70%;
+  display: block;
+  margin: auto;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.container__liquidacion .catalogo .producto-container img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.container__liquidacion .catalogo .producto-container h3 {
+  margin: 1rem;
+}
+
+.container__liquidacion .catalogo .producto-container h4 {
+  margin-left: 1rem;
+  margin-bottom: 0.125rem;
+}
+
+.container__liquidacion .catalogo .producto-container button {
+  float: right;
+  margin-right: 0.625rem;
+  margin-bottom: 0.625rem;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  padding: 0.1875rem;
+  cursor: pointer;
+}
+
+.container__liquidacion .catalogo .producto-container button:hover {
+  background-color: #4c4545;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */

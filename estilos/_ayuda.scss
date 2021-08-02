@@ -1,3 +1,85 @@
 .container-ayuda {
+    display: flex;
     background-color: rgb(43, 41, 41);
+    min-height: 85vh;
+    
+        .container-ayuda1 {
+            display: flex;
+            width: 50%;
+            position: relative;
+
+                h2 {
+                    position: absolute;
+                    left: 20%;
+                    top: 10%;
+                }
+
+                .rastrear-pedido {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    left: 20%;
+                    top: 40%;
+                    width: 70%;
+                    height: 30%;
+
+                        h3 {
+                            text-align: center;
+                        }
+
+                        form {
+                            display: flex;
+                            flex-direction: column;
+                            width: 50%;
+                            margin: auto;
+
+                            .campos-formulario {
+                                height: 2rem;
+                                padding: 0 1rem;
+                                letter-spacing: .06rem;
+                            }
+
+                                .rastrear-pedido-boton {
+                                    display: flex;
+                                    justify-content: center;
+
+                                    .boton-formulario {
+                                        margin-top: 1rem;
+                                        height: 1.8rem;
+                                        border-radius: .9rem;
+                                        width: 10rem;
+                                        letter-spacing: .06rem;
+                                    }
+                                }
+
+                        }
+                }
+
+        }
+
+        .container-ayuda2 {
+            display: flex;
+            width: 50%;
+            flex-direction: column;
+            position: relative;
+
+                .container-ayuda2-cambios {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    left: 20%;
+                    top: 40%;
+                    width: 70%;
+                    height: 30%;
+                }
+
+                .cambios-devoluciones {
+                    margin-top: 1rem;
+
+                        p {
+                            margin-bottom: .5rem;
+                        }
+
+                }
+        }
 }
