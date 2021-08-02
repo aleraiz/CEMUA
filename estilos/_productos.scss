@@ -1,16 +1,21 @@
 .container__productos {
     display: flex;
-    padding-top: $ancho/10;
+    padding-top: 50px;
     justify-content: space-around;
     
     .container__filtros {
-        padding-left: 30px;
+        padding-left: 40px;
         padding-top: 20px;
         flex-basis: 20%;
 
+            .texto-productos {
+                margin-bottom: 20px;
+                color: black;
+            }
+
             li {
                 font-size: 20px;
-                margin-top: $ancho/100;
+                margin-top: 5px;
                 cursor: pointer;
             }
     }
@@ -19,7 +24,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        // border: 1px solid black;
         flex-basis: 80%;
         
 
@@ -57,7 +61,7 @@
 
                 button {
                     float:right;
-                    margin-right: ($ancho/100)*2;
+                    margin-right: 10px;
                     margin-bottom: 10px;
                     transition-duration: 0.5s;
                     padding: 3px;

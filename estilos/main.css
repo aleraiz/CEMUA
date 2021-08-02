@@ -121,9 +121,11 @@ header {
 
 .principal {
   background-image: url(../img/fotoPortadaIndex.jpg);
-  min-height: 700px;
+  height: 120vh;
+  width: 100%;
   background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
 }
 
@@ -139,7 +141,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 40%;
 }
 
 .principal__subtitulo {
@@ -166,13 +167,18 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 150vh;
+  width: 100%;
+  background-color: black;
 }
 
 .seccion__img1 {
   background-image: url(../img/img-uno.jpg);
-  min-height: 900px;
+  height: 100%;
+  width: 100%;
   background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   position: relative;
@@ -191,9 +197,11 @@ header {
 
 .seccion__img2 {
   background-image: url(../img/img-dos.jpg);
-  min-height: 900px;
+  height: 100%;
+  width: 100%;
   background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   position: relative;
@@ -279,10 +287,15 @@ footer {
 }
 
 .container__productos .container__filtros {
-  padding-left: 30px;
+  padding-left: 40px;
   padding-top: 20px;
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
+}
+
+.container__productos .container__filtros .texto-productos {
+  margin-bottom: 20px;
+  color: black;
 }
 
 .container__productos .container__filtros li {
@@ -432,6 +445,9 @@ footer {
 
 .container-contacto .container-contacto2 .contacto2-cont .twitter {
   margin: 10px;
+  padding: 20px 0;
+  border-bottom: 2px solid whitesmoke;
+  border-top: 2px solid whitesmoke;
 }
 
 .container-contacto .container-contacto2 .contacto2-cont .twitter h3 {
@@ -440,6 +456,8 @@ footer {
 
 .container-contacto .container-contacto2 .contacto2-cont .mail {
   margin: 10px;
+  padding: 20px 0;
+  border-bottom: 2px solid whitesmoke;
 }
 
 .container-contacto .container-contacto2 .contacto2-cont .mail h3 {
@@ -448,6 +466,8 @@ footer {
 
 .container-contacto .container-contacto2 .contacto2-cont .llamada {
   margin: 10px;
+  padding: 20px 0;
+  border-bottom: 2px solid whitesmoke;
 }
 
 .container-contacto .container-contacto2 .contacto2-cont .llamada h3 {
@@ -456,5 +476,9 @@ footer {
 
 .container-contacto .container-contacto2 .contacto2-cont .hover-contacto:hover {
   color: pink;
+}
+
+.container-ayuda {
+  background-color: #2b2929;
 }
 /*# sourceMappingURL=main.css.map */
