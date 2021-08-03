@@ -69,9 +69,20 @@
                     margin: 1rem;
                 }
 
-                h4 {
+                .producto-container-precios {
+                    display: flex;
+                    flex-direction: column;
                     margin-left: 1rem;
-                    margin-bottom: 0.125rem;
+                        
+                        .precio-anterior {
+                            color: red;
+                            text-decoration: line-through;
+                        }
+
+                        h4 {
+                            
+                            margin: 0.5rem 0;
+                        }
                 }
 
                 button {
@@ -81,6 +92,7 @@
                     transition-duration: 0.5s;
                     padding: 0.1875rem;
                     cursor: pointer;
+                    border-radius: .3rem;
                     
                     &:hover {
                         background-color: rgb(76, 69, 69);

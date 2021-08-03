@@ -22,8 +22,11 @@
                     top: 40%;
                     width: 70%;
                     height: 30%;
+                    border-bottom: 0.125rem solid whitesmoke;
+                    border-top: 0.125rem solid whitesmoke;
 
                         h3 {
+                            margin-top: .5rem;
                             text-align: center;
                         }
 
@@ -49,6 +52,7 @@
                                         border-radius: .9rem;
                                         width: 10rem;
                                         letter-spacing: .06rem;
+                                        cursor: pointer;
                                     }
                                 }
 
@@ -62,6 +66,7 @@
             width: 50%;
             flex-direction: column;
             position: relative;
+            
 
                 .container-ayuda2-cambios {
                     display: flex;
@@ -71,6 +76,12 @@
                     top: 40%;
                     width: 70%;
                     height: 30%;
+                    border-bottom: 0.125rem solid whitesmoke;
+                    border-top: 0.125rem solid whitesmoke;
+
+                        h3{
+                            margin-top: .5rem;
+                        }
                 }
 
                 .cambios-devoluciones {

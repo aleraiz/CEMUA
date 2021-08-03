@@ -60,7 +60,7 @@ header {
 }
 
 .logo__titulo:hover {
-  color: pink;
+  color: #f8d134;
 }
 
 .menu {
@@ -78,7 +78,7 @@ header {
 }
 
 .menu__enlace:hover {
-  color: pink;
+  color: #f8d134;
   font-weight: 700;
 }
 
@@ -114,7 +114,7 @@ header {
 }
 
 .usuario__iconos:hover {
-  color: pink;
+  color: #f8d134;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -130,13 +130,16 @@ header {
 }
 
 .principal__div {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 1.25rem;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -144,10 +147,13 @@ header {
 }
 
 .principal__subtitulo {
-  margin: 1.25rem;
   cursor: pointer;
   -webkit-transition: 2s;
   transition: 2s;
+  color: #f8d134;
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: 2.34px;
 }
 
 .principal__subtitulo:hover {
@@ -155,12 +161,27 @@ header {
           transform: scale(1.1);
 }
 
-.principal__enlace {
+.rectangulo__enlace {
+  width: 10.5625rem;
+  height: 3rem;
+  margin: 14px 439px 0;
+  padding: 13px 0;
+  border: solid 0.0625rem whitesmoke;
+  border-radius: 1.75rem;
   text-align: center;
 }
 
-.principal__enlace:hover {
-  color: pink;
+.rectangulo__enlace .principal__enlace {
+  text-align: center;
+  text-transform: uppercase;
+  width: 10px;
+  height: 23px;
+  font-size: 1rem;
+  letter-spacing: 0.8px;
+}
+
+.rectangulo__enlace .principal__enlace:hover {
+  color: #f8d134;
 }
 
 .seccion {
@@ -191,7 +212,7 @@ header {
 }
 
 .seccion__enlace:hover {
-  color: pink;
+  color: #f8d134;
   cursor: pointer;
 }
 
@@ -214,7 +235,7 @@ header {
 }
 
 .seccion__enlace:hover {
-  color: pink;
+  color: #f8d134;
   cursor: pointer;
 }
 
@@ -248,7 +269,7 @@ footer {
 }
 
 .footer__enlaces:hover {
-  color: pink;
+  color: #f8d134;
 }
 
 .footer__redes {
@@ -266,13 +287,13 @@ footer {
 }
 
 .footer__facebook:hover {
-  color: pink;
+  color: #f8d134;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
 .footer__instagram:hover {
-  color: pink;
+  color: #f8d134;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -366,6 +387,7 @@ footer {
           transition-duration: 0.5s;
   padding: 0.1875rem;
   cursor: pointer;
+  border-radius: .3rem;
 }
 
 .container__productos .catalogo .producto-container button:hover {
@@ -420,7 +442,7 @@ footer {
 }
 
 .container-contacto .container-contacto1 .chat-contacto i:hover {
-  color: pink;
+  color: #f8d134;
 }
 
 .container-contacto .container-contacto2 {
@@ -475,7 +497,7 @@ footer {
 }
 
 .container-contacto .container-contacto2 .contacto2-cont .hover-contacto:hover {
-  color: pink;
+  color: #f8d134;
 }
 
 .container-ayuda {
@@ -513,9 +535,12 @@ footer {
   top: 40%;
   width: 70%;
   height: 30%;
+  border-bottom: 0.125rem solid whitesmoke;
+  border-top: 0.125rem solid whitesmoke;
 }
 
 .container-ayuda .container-ayuda1 .rastrear-pedido h3 {
+  margin-top: .5rem;
   text-align: center;
 }
 
@@ -552,6 +577,7 @@ footer {
   border-radius: .9rem;
   width: 10rem;
   letter-spacing: .06rem;
+  cursor: pointer;
 }
 
 .container-ayuda .container-ayuda2 {
@@ -579,6 +605,12 @@ footer {
   top: 40%;
   width: 70%;
   height: 30%;
+  border-bottom: 0.125rem solid whitesmoke;
+  border-top: 0.125rem solid whitesmoke;
+}
+
+.container-ayuda .container-ayuda2 .container-ayuda2-cambios h3 {
+  margin-top: .5rem;
 }
 
 .container-ayuda .container-ayuda2 .cambios-devoluciones {
@@ -684,9 +716,24 @@ footer {
   margin: 1rem;
 }
 
-.container__liquidacion .catalogo .producto-container h4 {
+.container__liquidacion .catalogo .producto-container .producto-container-precios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-left: 1rem;
-  margin-bottom: 0.125rem;
+}
+
+.container__liquidacion .catalogo .producto-container .producto-container-precios .precio-anterior {
+  color: red;
+  text-decoration: line-through;
+}
+
+.container__liquidacion .catalogo .producto-container .producto-container-precios h4 {
+  margin: 0.5rem 0;
 }
 
 .container__liquidacion .catalogo .producto-container button {
@@ -697,6 +744,7 @@ footer {
           transition-duration: 0.5s;
   padding: 0.1875rem;
   cursor: pointer;
+  border-radius: .3rem;
 }
 
 .container__liquidacion .catalogo .producto-container button:hover {
