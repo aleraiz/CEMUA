@@ -29,36 +29,31 @@
                         }
                     
                 }
-                    
-                    
-                    
-                    
-                    
-                .rectangulo__enlace {
+
+                .boton-principal__div {
+                    margin-top: .9rem;
                     width: 10.5625rem;
                     height: 3rem;
-                    margin: 14px 439px 0;
-                    padding: 13px 0;
-                    border: solid .0625rem $color-blanco;
+                    border: solid .1rem $color-blanco;
                     border-radius: 1.75rem;
-                    text-align: center;
-                    
-                    
-                    .principal__enlace {
-                        text-align: center;
-                        text-transform: uppercase;
-                        width: 10px;
-                        height: 23px;
-                        font-size: 1rem;
-                        letter-spacing: 0.8px;
-                        
-                        &:hover{
-                            color: $hover-header;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    background-color: transparent;
+                    color: $color-blanco;
+                    letter-spacing: 0.8px;
+                    font-size: .9rem;
+
+                        &:hover {
+                            background-color: $color-amarillo;
+                            color: black;
+                            border: none;
                         }
-                    }
+
                 }
+
         }
 }
+
                 
                 
 
@@ -66,7 +61,7 @@
     display: flex;
     height: 150vh;
     width: 100%;
-    background-color: black;
+    // background-color: black;
 
 
     .seccion__img1 {
@@ -94,22 +89,31 @@
                 
             }
         
-        
-            .rectangulo__enlace-img1 {
-                border: solid .0625rem $color-blanco;
-                border-radius: 1.75rem;
-                width: 10.5625rem;
-                height: 3rem;
-                padding: 13px 0;
-                text-align: center;
-                margin: 1rem auto;
+            
+                    .boton-seccion__img1 {
+                    margin-top: .9rem;
+                    width: 8.5625rem;
+                    height: 3rem;
+                    border: solid .1rem $color-blanco;
+                    border-radius: 1.75rem;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    background-color: transparent;
+                    color: $color-blanco;
+                    letter-spacing: 0.8px;
+                    font-size: .9rem;
 
-                .seccion__enlace:hover{
-                    color: $hover-header;
+                        &:hover {
+                            background-color: $color-amarillo;
+                            color: black;
+                            border: none;
+                        }
+
                 }
-                
-            }
+
+
     }
+
     .seccion__img2 {
         background-image: url(../img/img-dos.jpg);
         height: 100%;
@@ -122,6 +126,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-transform: uppercase;
 
 
             .texto__img2{
@@ -135,20 +140,26 @@
                     }
             }
 
-            .rectangulo__enlace-img2 {
-                border: solid .0625rem $color-blanco;
-                border-radius: 1.75rem;
-                width: 10.5625rem;
-                height: 3rem;
-                padding: 13px 0;
-                text-align: center;
-                margin: 1rem auto;
+                .boton-seccion__img1 {
+                    margin-top: .9rem;
+                    width: 8.5625rem;
+                    height: 3rem;
+                    border: solid .1rem $color-blanco;
+                    border-radius: 1.75rem;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    background-color: transparent;
+                    color: $color-blanco;
+                    letter-spacing: 0.8px;
+                    font-size: .9rem;
 
-                .seccion__enlace:hover{
-                    color: $hover-header;
+                        &:hover {
+                            background-color: $color-amarillo;
+                            color: black;
+                            border: none;
+                        }
+
                 }
-                
-            }
         
     }
     
