@@ -33,7 +33,7 @@ li {
 
 header {
   background-color: black;
-  padding: 10px 0;
+  padding: .625rem 0;
 }
 
 .header-container {
@@ -129,7 +129,7 @@ header {
   position: relative;
 }
 
-.principal__div {
+.principal .principal__div {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,7 +146,7 @@ header {
           flex-direction: column;
 }
 
-.principal__subtitulo {
+.principal .principal__div .principal__subtitulo {
   cursor: pointer;
   -webkit-transition: 2s;
   transition: 2s;
@@ -156,12 +156,12 @@ header {
   letter-spacing: 2.34px;
 }
 
-.principal__subtitulo:hover {
+.principal .principal__div .principal__subtitulo:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.rectangulo__enlace {
+.principal .principal__div .rectangulo__enlace {
   width: 10.5625rem;
   height: 3rem;
   margin: 14px 439px 0;
@@ -171,7 +171,7 @@ header {
   text-align: center;
 }
 
-.rectangulo__enlace .principal__enlace {
+.principal .principal__div .rectangulo__enlace .principal__enlace {
   text-align: center;
   text-transform: uppercase;
   width: 10px;
@@ -180,7 +180,7 @@ header {
   letter-spacing: 0.8px;
 }
 
-.rectangulo__enlace .principal__enlace:hover {
+.principal .principal__div .rectangulo__enlace .principal__enlace:hover {
   color: #f8d134;
 }
 
@@ -193,30 +193,58 @@ header {
   background-color: black;
 }
 
-.seccion__img1 {
+.seccion .seccion__img1 {
   background-image: url(../img/img-uno.jpg);
   height: 100%;
-  width: 100%;
+  max-width: 100%;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.seccion__enlace {
-  position: absolute;
-  right: 10%;
-  bottom: 5%;
-}
-
-.seccion__enlace:hover {
+.seccion .seccion__img1 .texto__img1 {
   color: #f8d134;
+  font-size: 2rem;
+  -webkit-transition: 2s;
+  transition: 2s;
   cursor: pointer;
 }
 
-.seccion__img2 {
+.seccion .seccion__img1 .texto__img1:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.seccion .seccion__img1 .rectangulo__enlace-img1 {
+  border: solid 0.0625rem whitesmoke;
+  border-radius: 1.75rem;
+  width: 10.5625rem;
+  height: 3rem;
+  padding: 13px 0;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.seccion .seccion__img1 .rectangulo__enlace-img1 .seccion__enlace:hover {
+  color: #f8d134;
+}
+
+.seccion .seccion__img2 {
   background-image: url(../img/img-dos.jpg);
   height: 100%;
   width: 100%;
@@ -225,18 +253,46 @@ header {
   background-repeat: no-repeat;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.seccion__enlace {
-  position: absolute;
-  right: 10%;
-  bottom: 5%;
-}
-
-.seccion__enlace:hover {
+.seccion .seccion__img2 .texto__img2 {
   color: #f8d134;
+  font-size: 2rem;
+  -webkit-transition: 2s;
+  transition: 2s;
   cursor: pointer;
+}
+
+.seccion .seccion__img2 .texto__img2:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.seccion .seccion__img2 .rectangulo__enlace-img2 {
+  border: solid 0.0625rem whitesmoke;
+  border-radius: 1.75rem;
+  width: 10.5625rem;
+  height: 3rem;
+  padding: 13px 0;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.seccion .seccion__img2 .rectangulo__enlace-img2 .seccion__enlace:hover {
+  color: #f8d134;
 }
 
 footer {
