@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Inicio Seo -->
     <!-- Keywords -->
-    <meta name="keywords" content="Tienda, Ropa, Moda, Zapatos, Accesorios, Productos, TiendaOnline">
+    <meta name="keywords" content="Tienda, Ropa, Moda, Zapatos, Accesorios">
     <!-- Título -->
-    <title> CEMUÁ - Productos en Liquidación</title>
+    <title>CEMUÁ - Liquidación</title>
     <!-- Descripción -->
-    <meta name="description" content="Tienda Online - CEMUÁ. Descubre todos los productos de la nueva colección. Las últimas tendencias en ropa femenina.">
+    <meta name="description" content="Descubre la nueva colección de CEMUÁ. Las últimas tendencias en ropa femenina.">
     <!-- Fin Seo -->
     <link rel="stylesheet" href="../estilos/main.css">
     <script src="https://kit.fontawesome.com/85d4ade37a.js" crossorigin="anonymous"></script>
@@ -19,10 +19,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="body-liquidacion">
 
     <!-- Inicio encabezados -->
-    <header>
+    <header class="header-liquidacion">
         <div class="header-container">
 
             <div class="logo">
@@ -33,9 +33,9 @@
 
             <nav class="menu"> 
                 <ul class="menu__lista">
-                    <li class="menu__elementos"><a class="menu__enlace" href="productos.html">Prendas</a></li>
-                    <li class="menu__elementos"><a class="menu__enlace" href="productos.html">Accesorios</a></li>
-                    <li class="menu__elementos"><a class="menu__enlace" href="productos.html">Zapatos</a></li>
+                    <li class="menu__elementos"><a class="menu__enlace" href="prendas.html">Prendas</a></li>
+                    <li class="menu__elementos"><a class="menu__enlace" href="accesorios.html">Accesorios</a></li>
+                    <li class="menu__elementos"><a class="menu__enlace" href="zapatos.html">Zapatos</a></li>
                     <li class="menu__elementos"><a class="menu__enlace" href="liquidacion.html">Liquidación</a></li>
                 </ul>
             </nav>
@@ -53,129 +53,92 @@
 
     </header>
 
-    <!-- Inicio contenido principal -->
-        <div class="container__mensaje">
-            <h2>Liquidación</h2>
-            <p> ¡¡¡ Aprovechá los descuentos hasta 50% en temporadas anteriores!!!</p>
-        </div>
-        <div class="container__liquidacion" id="productos">
-            <div class="container__filtros">
+    <div class="contenido-liquidacion">
+        <div class="liquidacion-grid">
+            <div class="menu-filtros-liquidacion">
+                <h2>TIENDA ONLINE</h2>
                 <ul>
-                    <h3 class="texto-productos">Tienda online</h3>
                     <li>Prendas</li>
-                        <ul>
-                            <li>Superiores</li>
-                            <li>Inferiores</li>
+                        <ul class="sub-lista">
+                            <li><a href="prendas.html">Superiores</a></li>
+                            <li><a href="prendas.html">Inferiores</a></li>
                         </ul>
-                    <li>Accesorios</li>
-                    <li>Zapatos</li>
+                    <li><a href="accesorios.html">Accesorios</a></li>
+                    <li><a href="zapatos.html">Zapatos</a></li>
+                    <li><a href="liquidacion.html">Liquidación</a></li>
                 </ul>
             </div>
-            <div class="catalogo">
-                <div class="producto-container">
-                    <img src="../img/prenda1.jpg" alt="producto1">
-                    <h3 class="texto-productos">Producto</h3 class="texto-productos">
+            <!-- Inicio contenido principal -->
+            <div class="catalogo-prendas-liquidacion">
+                <div class="producto-container-liquidacion">
+                    <img src="../img/liquidacion1.png" alt="producto1">
+                    <h3 class="texto-productos">Pantalones con pierna ancha con corte de sastre</h3 class="texto-productos">
                     <div class="producto-container-precios">
                         <h5 class="precio-anterior">$200</h5>
                         <h4 class="texto-productos">$100</h4>
                     </div>
                     <span><button>Agregar</button></span>
                 </div>
-
-                <div class="producto-container">
-                    <img src="../img/prenda2.jpg" alt="producto2">
-                    <h3 class="texto-productos">Producto</h3 class="texto-productos">
+                <div class="producto-container-liquidacion">
+                    <img src="../img/liquidacion2.png" alt="producto1">
+                    <h3 class="texto-productos">Shorts Sunday</h3 class="texto-productos">
                     <div class="producto-container-precios">
                         <h5 class="precio-anterior">$200</h5>
                         <h4 class="texto-productos">$100</h4>
                     </div>
                     <span><button>Agregar</button></span>
                 </div>
-
-                <div class="producto-container">
-                    <img src="../img/prenda3.jpg" alt="producto3">
-                    <h3 class="texto-productos">Producto</h3 class="texto-productos">
+                <div class="producto-container-liquidacion">
+                    <img src="../img/liquidacion3.png" alt="producto1">
+                    <h3 class="texto-productos">Minivestido con fruncido tipo nido de abeja</h3 class="texto-productos">
                     <div class="producto-container-precios">
                         <h5 class="precio-anterior">$200</h5>
                         <h4 class="texto-productos">$100</h4>
                     </div>
                     <span><button>Agregar</button></span>
                 </div>
-
-                <div class="producto-container">
-                    <img src="../img/zap1.jpg" alt="zap1">
-                    <h3 class="texto-productos">Producto</h3 class="texto-productos">
+                <div class="producto-container-liquidacion">
+                    <img src="../img/liquidacion4.png" alt="producto1">
+                    <h3 class="texto-productos">Minivestido con fruncido tipo nido de abeja</h3 class="texto-productos">
                     <div class="producto-container-precios">
                         <h5 class="precio-anterior">$200</h5>
                         <h4 class="texto-productos">$100</h4>
                     </div>
                     <span><button>Agregar</button></span>
                 </div>
-
-                <div class="producto-container">
-                    <img src="../img/zap2.jpg" alt="zap2">
-                    <h3 class="texto-productos">Producto</h3 class="texto-productos">
+                <div class="producto-container-liquidacion">
+                    <img src="../img/liquidacion5.png" alt="producto1">
+                    <h3 class="texto-productos">Shorts mom de tiro alto con diseño de los 80</h3 class="texto-productos">
                     <div class="producto-container-precios">
                         <h5 class="precio-anterior">$200</h5>
                         <h4 class="texto-productos">$100</h4>
                     </div>
                     <span><button>Agregar</button></span>
                 </div>
-
-                <div class="producto-container">
-                    <img src="../img/zap3.jpg" alt="zap3">
-                    <h3 class="texto-productos">Producto</h3 class="texto-productos">
+                <div class="producto-container-liquidacion">
+                    <img src="../img/liquidacion6.png" alt="producto1">
+                    <h3 class="texto-productos">Jeans de tiro superalto con pierna ancha y corta</h3 class="texto-productos">
                     <div class="producto-container-precios">
                         <h5 class="precio-anterior">$200</h5>
                         <h4 class="texto-productos">$100</h4>
                     </div>
                     <span><button>Agregar</button></span>
                 </div>
-
-                <div class="producto-container">
-                    <img src="../img/pant1.jpg" alt="pant1">
-                    <h3 class="texto-productos">Producto</h3 class="texto-productos">
-                    <div class="producto-container-precios">
-                        <h5 class="precio-anterior">$200</h5>
-                        <h4 class="texto-productos">$100</h4>
-                    </div>
-                    <span><button>Agregar</button></span>
-                </div>
-
-                <div class="producto-container">
-                    <img src="../img/pant2.jpg" alt="pant2">
-                    <h3 class="texto-productos">Producto</h3 class="texto-productos">
-                    <div class="producto-container-precios">
-                        <h5 class="precio-anterior">$200</h5>
-                        <h4 class="texto-productos">$100</h4>
-                    </div>
-                    <span><button>Agregar</button></span>
-                </div>
-
-                <div class="producto-container">
-                    <img src="../img/pant3.jpg" alt="pant3">
-                    <h3 class="texto-productos">Producto</h3 class="texto-productos">
-                    <div class="producto-container-precios">
-                        <h5 class="precio-anterior">$200</h5>
-                        <h4 class="texto-productos">$100</h4>
-                    </div>
-                    <span><button>Agregar</button></span>
-                </div>
-
-                
             </div>
         </div>
+    </div>
+
 
     <!-- inicio pie de pagina -->
     
-    <footer class="footer">
+    <footer class="footer footer-liquidacion">
             <div class="footer__derechos">
                 <p class="footer__texto"> Copyright 2021</p>
             </div>
             <div class="footer__menu">
                 <ul class="footer__lista">
                     <li><a href="../index.html"  class="footer__enlaces">CEMUÁ</a></li>
-                    <li><a href="productos.html"  class="footer__enlaces">Productos</a></li>
+                    <li><a href="prendas.html"  class="footer__enlaces">Productos</a></li>
                     <li><a href="contacto.html"  class="footer__enlaces">Contacto</a></li>
                     <li><a href="ayuda.html"  class="footer__enlaces">Ayuda</a></li>
                 </ul>

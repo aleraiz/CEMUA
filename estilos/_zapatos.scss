@@ -1,21 +1,21 @@
 // grid 
 
-.body-liquidacion {
+.body-zapatos {
     display: grid;
     grid-template-rows: 60px 1fr 60px;
     grid-template-areas: 
-        "header-liquidacion"
-        "contenido-liquidacion"
-        "footer-liquidacion";
+        "header-zapatos"
+        "contenido-zapatos"
+        "footer-zapatos";
 }
 
-.liquidacion-grid {
+.zapatos-grid {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-areas:
-        "menu-filtros-liquidacion catalogo-prendas-liquidacion";
+        "menu-filtros catalogo-prendas";
 
-        .catalogo-prendas-liquidacion {
+        .catalogo-prendas {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-column-gap: .5rem;
@@ -28,33 +28,33 @@
 
 // Nombres areas grid
 
-.header-liquidacion {
-    grid-area: header-liquidacion;
+.header-zapatos {
+    grid-area: header-zapatos;
 }
 
-.contenido-liquidacion {
-    grid-area: contenido-liquidacion;
+.contenido-zapatos {
+    grid-area: contenido-zapatos;
 }
 
-.footer-liquidacion {
-    grid-area: footer-liquidacion;
+.footer-zapatos {
+    grid-area: footer-zapatos;
 }
 
-.menu-filtros-liquidacion {
-    grid-area: menu-filtros-liquidacion;
+.menu-filtros {
+    grid-area: menu-filtros;
 }
 
-.catalogo-prendas-liquidacion {
-    grid-area: catalogo-prendas-liquidacion;
+.catalogo-prendas {
+    grid-area: catalogo-prendas;
 }
 
 
 
 // Estilos 
 
-.liquidacion-grid {
+.zapatos-grid {
     
-    .menu-filtros-liquidacion {
+    .menu-filtros{
         margin: 3rem auto;
 
             h2 {
@@ -82,10 +82,10 @@
     }
 
 
-    .catalogo-prendas-liquidacion {
+    .catalogo-prendas {
         margin: 2rem 1rem;
 
-        .producto-container-liquidacion {
+        .producto-container {
             padding: 1rem;
             // max-width: 500px;
             // max-height: 600px;
@@ -115,24 +115,14 @@
                 }
 
                 h3 {
-                    margin: 1.5rem 1.5rem .5rem 1.5rem;
+                    margin: 1.5rem 1.5rem;
                 }
-                
-                .producto-container-precios {
-                    h4 {
-                        margin-left: 1.5rem;
-                        margin-bottom: 0.125rem;
-                    }
 
-                    h5 {
-                        color: red;
-                        margin-left: 1.5rem;
-                        margin-bottom: 0.125rem;
-                        text-decoration: line-through;
-
-                    }
-
+                h4 {
+                    margin-left: 1.5rem;
+                    margin-bottom: 0.125rem;
                 }
+
                 button {
                     float: right;
                     margin-right: 1.5rem;
