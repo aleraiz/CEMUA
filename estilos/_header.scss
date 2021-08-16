@@ -3,64 +3,83 @@ header {
     background-color: black;
     padding: .625rem 0;
 
-}
-
+    
     .header-container {
         display: flex;
         justify-content: space-around;
         align-items: center;
-    }
-        .logo {
+        
+            .logo {
             flex-basis: 10%;
             display: flex;
-        }
-
-            .logo__titulo{
+            
+                .logo__titulo{
                 cursor: pointer;
+                
+                    &:hover {
+                        color: $hover-header;
+                    }
+                }
             }
-            .logo__titulo:hover {
-                color: $hover-header;
+    
+    
+            .menu {
+                flex-basis: 40%;
+                        
+                    .menu__lista {
+                        display: flex;
+                        justify-content: space-between;
+                        
+                        .menu__enlace:hover {
+                            color: $hover-header;
+                            font-weight: 700;
+                        }
+                    }
             }
-
-        .menu {
-            flex-basis: 40%;
-        }
-
-            .menu__lista {
-                display: flex;
-                justify-content: space-between;
-            }
-                .menu__enlace:hover {
-                    color: $hover-header;
-                    font-weight: 700;
+                    
+                        
+            .usuario {
+                flex-basis: 10%;
+                
+                .usuario__lista {
+                    display: inline-flex;
+                    padding: 0 0.625rem;
+                    width: 100%;
+                    justify-content:space-between;
+                    
+                    .usuario__elementos {
+                        display: flex;
+                        flex-basis: 20%;
+                        
+                        .usuario__iconos {
+                            color: $color-blanco;
+                            cursor: pointer;
+                            transition: 1s;
+                            
+                            &:hover {
+                                color: $hover-header;
+                                transform: scale(1.2);
+                                
+                            }
+                        }
+                    }
+                    
                 }
                 
-        .usuario {
-            flex-basis: 10%;
-
-        }
-            .usuario__lista {
-                display: inline-flex;
-                padding: 0 10px;
-                width: 100%;
-                justify-content:space-between;
             }
+            
+    }
+}
 
-                .usuario__elementos {
-                    display: flex;
-                    flex-basis: 20%;
-                }
-                    .usuario__iconos {
-                    color: $color-blanco;
-                    cursor: pointer;
-                    transition: 1s;
+// media queries
 
-                        &:hover {
-                        color: $hover-header;
-                        transform: scale(1.2);
-                        
-                    }
-                    }
-                        
+@media (max-width: 900px) {
+    
+    header{
+        
+        .header-container {
+            justify-content: space-between;
+        }
 
-                        
+    }
+}

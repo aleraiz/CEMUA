@@ -5,6 +5,11 @@
           box-sizing: border-box;
 }
 
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 ul {
   list-style: none;
 }
@@ -35,7 +40,7 @@ header {
   padding: .625rem 0;
 }
 
-.header-container {
+header .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,7 +51,7 @@ header {
           align-items: center;
 }
 
-.logo {
+header .header-container .logo {
   -ms-flex-preferred-size: 10%;
       flex-basis: 10%;
   display: -webkit-box;
@@ -54,20 +59,20 @@ header {
   display: flex;
 }
 
-.logo__titulo {
+header .header-container .logo .logo__titulo {
   cursor: pointer;
 }
 
-.logo__titulo:hover {
+header .header-container .logo .logo__titulo:hover {
   color: #f8d134;
 }
 
-.menu {
+header .header-container .menu {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
 }
 
-.menu__lista {
+header .header-container .menu .menu__lista {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,28 +81,28 @@ header {
           justify-content: space-between;
 }
 
-.menu__enlace:hover {
+header .header-container .menu .menu__lista .menu__enlace:hover {
   color: #f8d134;
   font-weight: 700;
 }
 
-.usuario {
+header .header-container .usuario {
   -ms-flex-preferred-size: 10%;
       flex-basis: 10%;
 }
 
-.usuario__lista {
+header .header-container .usuario .usuario__lista {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 0 10px;
+  padding: 0 0.625rem;
   width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.usuario__elementos {
+header .header-container .usuario .usuario__lista .usuario__elementos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,17 +110,25 @@ header {
       flex-basis: 20%;
 }
 
-.usuario__iconos {
+header .header-container .usuario .usuario__lista .usuario__elementos .usuario__iconos {
   color: whitesmoke;
   cursor: pointer;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-.usuario__iconos:hover {
+header .header-container .usuario .usuario__lista .usuario__elementos .usuario__iconos:hover {
   color: #f8d134;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+@media (max-width: 900px) {
+  header .header-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .principal {
@@ -815,6 +828,7 @@ footer {
 
 .liquidacion-grid .catalogo-prendas-liquidacion .producto-container-liquidacion h3 {
   margin: 1.5rem 1.5rem .5rem 1.5rem;
+  height: 47px;
 }
 
 .liquidacion-grid .catalogo-prendas-liquidacion .producto-container-liquidacion .producto-container-precios h4 {
@@ -834,9 +848,11 @@ footer {
   margin-right: 1.5rem;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  padding: 0.1875rem;
+  padding: .5rem 1.3rem;
   cursor: pointer;
-  border-radius: .3rem;
+  border-radius: .8rem;
+  border: none;
+  background-color: #dad9d9;
 }
 
 .liquidacion-grid .catalogo-prendas-liquidacion .producto-container-liquidacion button:hover {
@@ -857,10 +873,10 @@ footer {
   display: grid;
   -ms-grid-columns: 1fr 5fr;
       grid-template-columns: 1fr 5fr;
-      grid-template-areas: "menu-filtros catalogo-prendas";
+      grid-template-areas: "menu-filtros-prendas catalogo-prendas-prendas";
 }
 
-.prendas-grid .catalogo-prendas {
+.prendas-grid .catalogo-prendas-prendas {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -888,50 +904,50 @@ footer {
   grid-area: footer-prendas;
 }
 
-.menu-filtros {
+.menu-filtros-prendas {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: menu-filtros;
+  grid-area: menu-filtros-prendas;
 }
 
-.catalogo-prendas {
+.catalogo-prendas-prendas {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  grid-area: catalogo-prendas;
+  grid-area: catalogo-prendas-prendas;
 }
 
-.prendas-grid .menu-filtros {
+.prendas-grid .menu-filtros-prendas {
   margin: 3rem auto;
 }
 
-.prendas-grid .menu-filtros h2 {
+.prendas-grid .menu-filtros-prendas h2 {
   margin-bottom: 2rem;
 }
 
-.prendas-grid .menu-filtros .sub-lista {
+.prendas-grid .menu-filtros-prendas .sub-lista {
   padding-left: 1rem;
 }
 
-.prendas-grid .menu-filtros .sub-lista li {
+.prendas-grid .menu-filtros-prendas .sub-lista li {
   font-size: 1rem;
 }
 
-.prendas-grid .menu-filtros li {
+.prendas-grid .menu-filtros-prendas li {
   font-size: 1.2rem;
   margin: .5rem 0;
   padding-left: 1rem;
   cursor: pointer;
 }
 
-.prendas-grid .menu-filtros li a {
+.prendas-grid .menu-filtros-prendas li a {
   color: black;
 }
 
-.prendas-grid .catalogo-prendas {
+.prendas-grid .catalogo-prendas-prendas {
   margin: 2rem 1rem;
 }
 
-.prendas-grid .catalogo-prendas .producto-container {
+.prendas-grid .catalogo-prendas-prendas .producto-container {
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -944,12 +960,12 @@ footer {
   border-radius: .3rem;
 }
 
-.prendas-grid .catalogo-prendas .producto-container:hover {
+.prendas-grid .catalogo-prendas-prendas .producto-container:hover {
   -webkit-box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
 }
 
-.prendas-grid .catalogo-prendas .producto-container img {
+.prendas-grid .catalogo-prendas-prendas .producto-container img {
   width: 275px;
   height: 350px;
   margin: 1rem auto;
@@ -962,31 +978,34 @@ footer {
      object-position: top;
 }
 
-.prendas-grid .catalogo-prendas .producto-container img:hover {
+.prendas-grid .catalogo-prendas-prendas .producto-container img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.prendas-grid .catalogo-prendas .producto-container h3 {
+.prendas-grid .catalogo-prendas-prendas .producto-container h3 {
   margin: 1.5rem 1.5rem;
+  height: 47px;
 }
 
-.prendas-grid .catalogo-prendas .producto-container h4 {
+.prendas-grid .catalogo-prendas-prendas .producto-container h4 {
   margin-left: 1.5rem;
   margin-bottom: 0.125rem;
 }
 
-.prendas-grid .catalogo-prendas .producto-container button {
+.prendas-grid .catalogo-prendas-prendas .producto-container button {
   float: right;
   margin-right: 1.5rem;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  padding: 0.1875rem;
+  padding: .5rem 1.3rem;
   cursor: pointer;
-  border-radius: .3rem;
+  border-radius: .8rem;
+  border: none;
+  background-color: #dad9d9;
 }
 
-.prendas-grid .catalogo-prendas .producto-container button:hover {
+.prendas-grid .catalogo-prendas-prendas .producto-container button:hover {
   background-color: #4c4545;
   color: white;
 }
@@ -1004,10 +1023,10 @@ footer {
   display: grid;
   -ms-grid-columns: 1fr 5fr;
       grid-template-columns: 1fr 5fr;
-      grid-template-areas: "menu-filtros catalogo-prendas";
+      grid-template-areas: "menu-filtros-accesorios catalogo-prendas-accesorios";
 }
 
-.accesorios-grid .catalogo-prendas {
+.accesorios-grid .catalogo-prendas-accesorios {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -1035,50 +1054,50 @@ footer {
   grid-area: footer-accesorios;
 }
 
-.menu-filtros {
+.menu-filtros-accesorios {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: menu-filtros;
+  grid-area: menu-filtros-accesorios;
 }
 
-.catalogo-prendas {
+.catalogo-prendas-accesorios {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  grid-area: catalogo-prendas;
+  grid-area: catalogo-prendas-accesorios;
 }
 
-.accesorios-grid .menu-filtros {
+.accesorios-grid .menu-filtros-accesorios {
   margin: 3rem auto;
 }
 
-.accesorios-grid .menu-filtros h2 {
+.accesorios-grid .menu-filtros-accesorios h2 {
   margin-bottom: 2rem;
 }
 
-.accesorios-grid .menu-filtros .sub-lista {
+.accesorios-grid .menu-filtros-accesorios .sub-lista {
   padding-left: 1rem;
 }
 
-.accesorios-grid .menu-filtros .sub-lista li {
+.accesorios-grid .menu-filtros-accesorios .sub-lista li {
   font-size: 1rem;
 }
 
-.accesorios-grid .menu-filtros li {
+.accesorios-grid .menu-filtros-accesorios li {
   font-size: 1.2rem;
   margin: .5rem 0;
   padding-left: 1rem;
   cursor: pointer;
 }
 
-.accesorios-grid .menu-filtros li a {
+.accesorios-grid .menu-filtros-accesorios li a {
   color: black;
 }
 
-.accesorios-grid .catalogo-prendas {
+.accesorios-grid .catalogo-prendas-accesorios {
   margin: 2rem 1rem;
 }
 
-.accesorios-grid .catalogo-prendas .producto-container {
+.accesorios-grid .catalogo-prendas-accesorios .producto-container {
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1091,12 +1110,12 @@ footer {
   border-radius: .3rem;
 }
 
-.accesorios-grid .catalogo-prendas .producto-container:hover {
+.accesorios-grid .catalogo-prendas-accesorios .producto-container:hover {
   -webkit-box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
 }
 
-.accesorios-grid .catalogo-prendas .producto-container img {
+.accesorios-grid .catalogo-prendas-accesorios .producto-container img {
   width: 275px;
   height: 350px;
   margin: 1rem auto;
@@ -1109,31 +1128,34 @@ footer {
      object-position: top;
 }
 
-.accesorios-grid .catalogo-prendas .producto-container img:hover {
+.accesorios-grid .catalogo-prendas-accesorios .producto-container img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.accesorios-grid .catalogo-prendas .producto-container h3 {
+.accesorios-grid .catalogo-prendas-accesorios .producto-container h3 {
   margin: 1.5rem 1.5rem;
+  height: 47px;
 }
 
-.accesorios-grid .catalogo-prendas .producto-container h4 {
+.accesorios-grid .catalogo-prendas-accesorios .producto-container h4 {
   margin-left: 1.5rem;
   margin-bottom: 0.125rem;
 }
 
-.accesorios-grid .catalogo-prendas .producto-container button {
+.accesorios-grid .catalogo-prendas-accesorios .producto-container button {
   float: right;
   margin-right: 1.5rem;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  padding: 0.1875rem;
+  padding: .5rem 1.3rem;
   cursor: pointer;
-  border-radius: .3rem;
+  border-radius: .8rem;
+  border: none;
+  background-color: #dad9d9;
 }
 
-.accesorios-grid .catalogo-prendas .producto-container button:hover {
+.accesorios-grid .catalogo-prendas-accesorios .producto-container button:hover {
   background-color: #4c4545;
   color: white;
 }
@@ -1151,10 +1173,10 @@ footer {
   display: grid;
   -ms-grid-columns: 1fr 5fr;
       grid-template-columns: 1fr 5fr;
-      grid-template-areas: "menu-filtros catalogo-prendas";
+      grid-template-areas: "menu-filtros-zapatos catalogo-prendas-zapatos";
 }
 
-.zapatos-grid .catalogo-prendas {
+.zapatos-grid .catalogo-prendas-zapatos {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -1182,50 +1204,50 @@ footer {
   grid-area: footer-zapatos;
 }
 
-.menu-filtros {
+.menu-filtros-zapatos {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: menu-filtros;
+  grid-area: menu-filtros-zapatos;
 }
 
-.catalogo-prendas {
+.catalogo-prendas-zapatos {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  grid-area: catalogo-prendas;
+  grid-area: catalogo-prendas-zapatos;
 }
 
-.zapatos-grid .menu-filtros {
+.zapatos-grid .menu-filtros-zapatos {
   margin: 3rem auto;
 }
 
-.zapatos-grid .menu-filtros h2 {
+.zapatos-grid .menu-filtros-zapatos h2 {
   margin-bottom: 2rem;
 }
 
-.zapatos-grid .menu-filtros .sub-lista {
+.zapatos-grid .menu-filtros-zapatos .sub-lista {
   padding-left: 1rem;
 }
 
-.zapatos-grid .menu-filtros .sub-lista li {
+.zapatos-grid .menu-filtros-zapatos .sub-lista li {
   font-size: 1rem;
 }
 
-.zapatos-grid .menu-filtros li {
+.zapatos-grid .menu-filtros-zapatos li {
   font-size: 1.2rem;
   margin: .5rem 0;
   padding-left: 1rem;
   cursor: pointer;
 }
 
-.zapatos-grid .menu-filtros li a {
+.zapatos-grid .menu-filtros-zapatos li a {
   color: black;
 }
 
-.zapatos-grid .catalogo-prendas {
+.zapatos-grid .catalogo-prendas-zapatos {
   margin: 2rem 1rem;
 }
 
-.zapatos-grid .catalogo-prendas .producto-container {
+.zapatos-grid .catalogo-prendas-zapatos .producto-container {
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1238,12 +1260,12 @@ footer {
   border-radius: .3rem;
 }
 
-.zapatos-grid .catalogo-prendas .producto-container:hover {
+.zapatos-grid .catalogo-prendas-zapatos .producto-container:hover {
   -webkit-box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
 }
 
-.zapatos-grid .catalogo-prendas .producto-container img {
+.zapatos-grid .catalogo-prendas-zapatos .producto-container img {
   width: 275px;
   height: 350px;
   margin: 1rem auto;
@@ -1256,31 +1278,34 @@ footer {
      object-position: top;
 }
 
-.zapatos-grid .catalogo-prendas .producto-container img:hover {
+.zapatos-grid .catalogo-prendas-zapatos .producto-container img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.zapatos-grid .catalogo-prendas .producto-container h3 {
+.zapatos-grid .catalogo-prendas-zapatos .producto-container h3 {
   margin: 1.5rem 1.5rem;
+  height: 47px;
 }
 
-.zapatos-grid .catalogo-prendas .producto-container h4 {
+.zapatos-grid .catalogo-prendas-zapatos .producto-container h4 {
   margin-left: 1.5rem;
   margin-bottom: 0.125rem;
 }
 
-.zapatos-grid .catalogo-prendas .producto-container button {
+.zapatos-grid .catalogo-prendas-zapatos .producto-container button {
   float: right;
   margin-right: 1.5rem;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  padding: 0.1875rem;
+  padding: .5rem 1.3rem;
   cursor: pointer;
-  border-radius: .3rem;
+  border-radius: .8rem;
+  border: none;
+  background-color: #dad9d9;
 }
 
-.zapatos-grid .catalogo-prendas .producto-container button:hover {
+.zapatos-grid .catalogo-prendas-zapatos .producto-container button:hover {
   background-color: #4c4545;
   color: white;
 }
