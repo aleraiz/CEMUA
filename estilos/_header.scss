@@ -1,17 +1,17 @@
 
 header {
     background-color: black;
-    padding: .625rem 0;
+    padding: .625rem;
+    height: 60px;
+    width: 100%;
 
     
     .header-container {
         display: flex;
-        justify-content: space-around;
         align-items: center;
         
             .logo {
-            flex-basis: 10%;
-            display: flex;
+            flex-basis: 20%;
             
                 .logo__titulo{
                 cursor: pointer;
@@ -22,34 +22,43 @@ header {
                 }
             }
     
-    
+            .boton-menu {
+                display: none;
+                color: $color-blanco;
+            }
+
             .menu {
-                flex-basis: 40%;
+                flex-basis: 60%;
+                
                         
                     .menu__lista {
                         display: flex;
-                        justify-content: space-between;
+                        justify-content: center;
+
+                        .menu__elementos {
+
+                            margin: 0 1rem;
                         
-                        .menu__enlace:hover {
-                            color: $hover-header;
-                            font-weight: 700;
+                            .menu__enlace:hover {
+                                color: $hover-header;
+                                font-weight: 700;
+                            }
+
                         }
                     }
             }
                     
                         
             .usuario {
-                flex-basis: 10%;
+                flex-basis: 20%;
                 
                 .usuario__lista {
-                    display: inline-flex;
-                    padding: 0 0.625rem;
-                    width: 100%;
-                    justify-content:space-between;
+                    display: flex;
+                    justify-content:flex-end;
+                    
                     
                     .usuario__elementos {
-                        display: flex;
-                        flex-basis: 20%;
+                        margin: 0 1rem;
                         
                         .usuario__iconos {
                             color: $color-blanco;
@@ -73,13 +82,68 @@ header {
 
 // media queries
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     
-    header{
+    .header-home{
+        position: relative;
         
         .header-container {
             justify-content: space-between;
-        }
+            
+            
+            .menu {
+                position: absolute;
+                display: block;
+                background-color: black;
+                height: 200px;
+                width: 50%;
+                top: 60px;
+                right: 0%;
+                
+                
+                
+                .menu__lista {
+                    flex-direction: column;
+                    height: 100%;
+                    
+                        .menu__elementos {
+                            margin: .5rem auto;
+                        }
+                    
+                    
+                }
+            }
+            
+            .usuario{
+                display: none;
+            }
+            
+            .boton-menu {
+                flex-basis: 10%;
+                display: block;
+                text-align: center;
+                
+                
+                    i {
+                        cursor: pointer;
 
+                        &:hover {
+                            color: $color-amarillo;
+                        }
+
+                    }
+
+                    #boton-menu-hamb {
+                        // display: none;
+                        
+                        &input:checked ~ .menu__lista {
+                            background-color: whitesmoke;
+                            
+                        }
+                    }
+
+                    
+            }
+        }
     }
 }
