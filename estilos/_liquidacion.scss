@@ -61,14 +61,6 @@
                 margin-bottom: 2rem;
             }
             
-            .sub-lista {
-                padding-left: 1rem;
-                
-                    li {
-                        font-size: 1rem;
-                    }
-            }
-
             li {
                 font-size: 1.2rem;
                 margin: .5rem 0;
@@ -77,6 +69,10 @@
                 
                     a {
                         color: black;
+
+                        &:hover{
+                            color: $color-amarillo;
+                        }
                     }
             }
     }
@@ -153,4 +149,167 @@
 
         }
     }
+}
+
+// media queries
+
+@media (max-width: 1160px) {
+
+    .contenido-liquidacion {
+
+        .liquidacion-grid{
+
+            .menu-filtros-liquidacion {
+
+                margin: 3rem 0 3rem .8rem;
+
+                h2 {
+                    font-size: 80%;
+                }
+
+                ul {
+
+                    li {
+                        font-size: 1rem;
+
+                    }
+                }
+
+            }
+
+        }
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+
+
+// grid
+    .liquidacion-grid {
+    
+            .catalogo-prendas-liquidacion {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: .5rem;
+                grid-row-gap: .8rem;
+                justify-items: stretch;
+            }
+    }
+
+    .contenido-liquidacion {
+
+        .liquidacion-grid{
+
+            .menu-filtros-liquidacion {
+
+                margin: 3rem 0 3rem .8rem;
+
+                h2 {
+                    font-size: 70%;
+                }
+
+                ul {
+
+                    li {
+                        font-size: .9rem;
+
+                    }
+                }
+
+            }
+
+            .catalogo-prendas-liquidacion {
+                .producto-container{
+                    h3{
+                        font-size: .8rem;
+                    }
+                }
+            }
+
+        }
+    }
+
+
+
+}
+
+
+@media (max-width: 540px) {
+
+
+    // grid
+    .body-liquidacion {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+            "header-liquidacion"
+            "contenido-liquidacion"
+            "footer-liquidacion";
+    }
+    
+    .liquidacion-grid {
+
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "menu-filtros-liquidacion"
+        "catalogo-prendas-liquidacion";
+
+    
+            .catalogo-prendas-liquidacion {
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: .5rem;
+                grid-row-gap: .8rem;
+            }
+    }
+
+    .header-liquidacion {
+        grid-area: header-liquidacion;
+    }
+    
+    .contenido-liquidacion {
+        grid-area: contenido-liquidacion;
+    }
+    
+    .footer-liquidacion {
+        grid-area: footer-liquidacion;
+    }
+    
+    .menu-filtros-liquidacion {
+        grid-area: menu-filtros-liquidacion;
+    }
+    
+    .catalogo-prendas-liquidacion {
+        grid-area: catalogo-prendas-liquidacion;
+    }
+    
+
+    // estilos
+
+    .body-liquidacion {
+        .contenido-liquidacion{
+            .liquidacion-grid{
+                .menu-filtros-liquidacion{
+                    margin: 1rem auto;
+
+                    h2 {
+                        margin: 0;
+                        font-size: 2rem;
+                    }
+
+                    
+                    ul {
+                        display: none;
+                    }
+                }
+                .catalogo-prendas-liquidacion{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+
 }

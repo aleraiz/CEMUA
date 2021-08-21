@@ -60,14 +60,6 @@
             h2 {
                 margin-bottom: 2rem;
             }
-            
-            .sub-lista {
-                padding-left: 1rem;
-                
-                    li {
-                        font-size: 1rem;
-                    }
-            }
 
             li {
                 font-size: 1.2rem;
@@ -77,6 +69,11 @@
                 
                     a {
                         color: black;
+
+                        &:hover{
+                            color: $color-amarillo;
+                        }
+
                     }
             }
     }
@@ -87,8 +84,6 @@
 
         .producto-container {
             padding: 1rem;
-            // max-width: 500px;
-            // max-height: 600px;
             display: flex;
             flex-direction: column;
             cursor: pointer;
@@ -143,4 +138,168 @@
 
         }
     }
+}
+
+// media queries
+
+@media (max-width: 1160px) {
+
+    .contenido-zapatos {
+
+        .zapatos-grid{
+
+            .menu-filtros-zapatos {
+
+                margin: 3rem 0 3rem .8rem;
+
+                h2 {
+                    font-size: 80%;
+                }
+
+                ul {
+
+                    li {
+                        font-size: 1rem;
+
+                    }
+
+                }
+
+            }
+
+        }
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+
+
+// grid
+    .zapatos-grid {
+    
+            .catalogo-prendas-zapatos {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: .5rem;
+                grid-row-gap: .8rem;
+                justify-items: stretch;
+            }
+    }
+
+    .contenido-zapatos {
+
+        .zapatos-grid{
+
+            .menu-filtros-zapatos {
+
+                margin: 3rem 0 3rem .8rem;
+
+                h2 {
+                    font-size: 70%;
+                }
+
+                ul {
+
+                    li {
+                        font-size: .9rem;
+
+                    }
+                }
+
+            }
+
+            .catalogo-prendas-zapatos {
+                .producto-container{
+                    h3{
+                        font-size: .8rem;
+                    }
+                }
+            }
+
+        }
+    }
+
+
+
+}
+
+
+@media (max-width: 540px) {
+
+
+    // grid
+    .body-zapatos {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+            "header-zapatos"
+            "contenido-zapatos"
+            "footer-zapatos";
+    }
+    
+    .zapatos-grid {
+
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "menu-filtros-zapatos"
+        "catalogo-prendas-zapatos";
+
+    
+            .catalogo-prendas-zapatos {
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: .5rem;
+                grid-row-gap: .8rem;
+            }
+    }
+
+    .header-zapatos {
+        grid-area: header-zapatos;
+    }
+    
+    .contenido-zapatos {
+        grid-area: contenido-zapatos;
+    }
+    
+    .footer-zapatos {
+        grid-area: footer-zapatos;
+    }
+    
+    .menu-filtros-zapatos {
+        grid-area: menu-filtros-zapatos;
+    }
+    
+    .catalogo-prendas-zapatos {
+        grid-area: catalogo-prendas-zapatos;
+    }
+    
+
+    // estilos
+
+    .body-zapatos {
+        .contenido-zapatos{
+            .zapatos-grid{
+                .menu-filtros-zapatos{
+                    margin: 1rem auto;
+
+                    h2 {
+                        margin: 0;
+                        font-size: 2rem;
+                    }
+
+                    
+                    ul {
+                        display: none;
+                    }
+                }
+                .catalogo-prendas-zapatos{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+
 }

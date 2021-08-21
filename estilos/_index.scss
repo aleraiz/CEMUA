@@ -26,37 +26,36 @@
                     color: $color-amarillo;
                     font-size: 3.5rem ;
                     font-weight: bold;
-                    letter-spacing: 2.34px;
-                    
-                    
+                    letter-spacing: 2.34px;                   
                 
                         &:hover {
                             transform: scale(1.1);
                         }
-                    
                 }
+                .principal__enlace {
 
-                .boton-principal__div {
-                    margin-top: .9rem;
-                    width: 10.5625rem;
-                    height: 3rem;
-                    border: solid .1rem $color-blanco;
-                    border-radius: 1.75rem;
-                    cursor: pointer;
-                    text-transform: uppercase;
-                    background-color: transparent;
-                    color: $color-blanco;
-                    letter-spacing: 0.8px;
-                    font-size: .9rem;
+                    .boton-principal__div {
+                        margin-top: .9rem;
+                        width: 10.5625rem;
+                        height: 3rem;
+                        border: solid .1rem $color-blanco;
+                        border-radius: 1.75rem;
+                        cursor: pointer;
+                        text-transform: uppercase;
+                        background-color: transparent;
+                            color: $color-blanco;
+                            letter-spacing: 0.8px;
+                            font-size: .9rem;
 
-                        &:hover {
-                            background-color: $color-amarillo;
-                            color: black;
-                            border: none;
-                        }
+                                &:hover {
+                                    background-color: $color-amarillo;
+                                    color: black;
+                                    border: none;
+                                }
+
+                    }
 
                 }
-
         }
 }
 
@@ -67,7 +66,6 @@
     display: flex;
     height: 150vh;
     width: 100%;
-    // background-color: black;
 
 
     .seccion__img1 {
@@ -82,6 +80,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-transform: uppercase;
 
             .texto__img1 {
                 color: $color-amarillo;
@@ -146,7 +145,7 @@
                     }
             }
 
-                .boton-seccion__img1 {
+                .boton-seccion__img2 {
                     margin-top: .9rem;
                     width: 8.5625rem;
                     height: 3rem;
@@ -169,4 +168,235 @@
         
     }
     
+}
+
+
+@media (max-width: 1024px) {
+
+    .principal {
+
+        .principal__div {
+
+            .principal__subtitulo {
+
+                font-size: 3rem;
+            }
+
+        }
+
+    }
+
+}
+
+
+@media (max-width: 890px) {
+
+    .principal {
+
+        .principal__div {
+
+            .principal__subtitulo {
+
+                font-size: 2rem;
+            }
+
+            .principal__enlace {
+
+                .boton-principal__div {
+                    margin-top: .9rem;
+                    width: 8.5625rem;
+                    height: 2.5rem;
+                    font-size: .7rem;
+
+                }
+
+            }
+        }
+
+    }
+
+    .seccion {
+
+        .seccion__img1 {
+            .texto__img1{
+                font-size: 1.5rem;
+            }
+            .principal__enlace{
+                .boton-seccion__img1{
+                    margin-top: .9rem;
+                    width: 6.5625rem;
+                    height: 2rem;
+                    letter-spacing: 0.8px;
+                    font-size: .6rem;
+
+                }
+            }
+        }
+
+        .seccion__img2 {
+            .texto__img2 {
+                font-size: 1.5rem;
+            }
+            .principal__enlace{
+                .boton-seccion__img2{
+                    margin-top: .9rem;
+                    width: 6.5625rem;
+                    height: 2rem;
+                    letter-spacing: 0.8px;
+                    font-size: .6rem;
+
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+
+
+    .principal {
+        background-image: url(../img/fotoportadaindextablet.png);
+        height: 120vh;
+        width: 100%;
+        position: relative;
+            
+            .principal__div {
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+    }
+    .seccion {
+        display: flex;
+        flex-direction: column;
+        height: 300vh;
+        width: 100%;
+    
+    
+        .seccion__img1 {
+            background-image: url(../img/img-uno.jpg);
+            height: auto;
+            max-width: 100%;
+    
+                .texto__img1 {
+                    color: $color-amarillo;
+                    font-size: 1rem;
+                    transition: 2s;
+                    cursor: pointer;
+                    
+                }
+            
+                
+                        .boton-seccion__img1 {
+                        margin-top: .9rem;
+                        width: 8.5625rem;
+                        height: 3rem;
+                        letter-spacing: 0.8px;
+                        font-size: .9rem;
+    
+                    }
+    
+    
+        }
+    
+        .seccion__img2 {
+            background-image: url(../img/img-dos.jpg);
+            height: auto;
+            width: 100%;
+    
+    
+                .texto__img2{
+                    color: $color-amarillo;
+                    font-size: 1rem;
+                    transition: 2s;
+                    cursor: pointer;
+    
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                }
+    
+                    .boton-seccion__img2 {
+                        margin-top: .9rem;
+                        width: 8.5625rem;
+                        height: 3rem;
+                        letter-spacing: 0.8px;
+                        font-size: .9rem;
+    
+                            &:hover {
+                                background-color: $color-amarillo;
+                                color: black;
+                                border: none;
+                            }
+    
+                    }
+            
+        }
+    }
+}
+
+
+@media (max-width: 620px) {
+
+    .principal {
+
+        .principal__div {
+
+            .principal__subtitulo {
+
+                font-size: 1.5rem;
+            }
+
+            .principal__enlace {
+
+                .boton-principal__div {
+                    margin-top: .9rem;
+                    width: 6.5625rem;
+                    height: 2rem;
+                    font-size: .6rem;
+
+                }
+
+            }
+        }
+
+    }
+
+
+
+}
+
+@media (max-width: 500px) {
+
+    .principal {
+
+        .principal__div {
+
+            .principal__subtitulo {
+
+                font-size: 1rem;
+            }
+        }
+
+    }
+
+}
+
+@media (max-width: 350px) {
+
+    .principal {
+
+        .principal__div {
+
+            .principal__subtitulo {
+
+                font-size: .8rem;
+            }
+        }
+
+    }
+
 }

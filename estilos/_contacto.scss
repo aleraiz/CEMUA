@@ -1,105 +1,268 @@
+// grid 
+
+.body-contacto {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "header-contacto"
+        "contenido-contacto"
+        "footer-contacto";
+}
 
 .container-contacto {
-    display: flex;
-    min-height: 85vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-template-areas: 
+        "container-contacto1 container-contacto2";
+}
+
+.container-contacto1 {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas:
+        "titulo-contacto"
+        "chat-contacto";
+        justify-items: center;
+        align-items: center;
+
+}
+
+.bloque-contacto2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 2rem;
+    grid-template-areas:
+        "twitter"
+        "mail"
+        "llamada";
+
+    justify-items: center;
+    align-items: center;
+
+}
+
+// Nombres areas grid
+
+.header-contacto {
+    grid-area: header-contacto;
+}
+
+.contenido-contacto {
+    grid-area: contenido-contacto;
+}
+
+.footer-contacto {
+    grid-area: footer-contacto;
+}
+
+.container-contacto1{
+    grid-area: container-contacto1;
+}
+
+.container-contacto2{
+    grid-area: container-contacto2;
+}
+
+.titulo-contacto {
+    grid-area: titulo-contacto;
+}
+
+.chat-contacto {
+    grid-area: chat-contacto;
+}
+
+.twitter {
+    grid-area: twitter;
+}
+
+.mail {
+    grid-area: mail;
+}
+
+.llamada {
+    grid-area: llamada;
+}
+
+
+.container-contacto {
     background-color: rgb(43, 41, 41);
     
         .container-contacto1 {
-            display: flex;
-            width: 50%;
-            position: relative;
-
-            
 
                 h2 {
-                    position: absolute;
-                    left: 20%;
-                    top: 10%;
                     color: $color-blanco;
                     
                 }
 
                 .chat-contacto {
-                    position: absolute;
-                    left: 20%;
-                    top: 40%;
-                    width: 70%;
-                    height: 34%;
-                    border-bottom: 0.125rem solid whitesmoke;
-                    border-top: 0.125rem solid whitesmoke;
+                    min-height: 50%;
+                    width: 80%;
+                    margin: auto;
+                    transition: 1s;
+                    border-radius: 1rem;
+
+                    &:hover {
+                        background-color: rgb(70, 67, 67);
+                    }
 
                         h3 {
-                            margin: 5%;
+                            text-align: center;
+                            margin: 1rem 0;
                             color: $color-blanco;
+                        }
+
+                        p {
+                            margin: 1rem 0;
                         }
 
                         i {
                             display: flex;
                             justify-content: center;
-                            margin-top: 2%;
                             color: $color-blanco;
                             cursor: pointer;
                             
-                            
-                            &:hover{
-                                color: $hover-header;
-                            }
+                                &:hover{
+                                    color: $hover-header;
+                                }
                         }
-
-
                 }
-        
         }
 
         .container-contacto2 {
             display: flex;
-            width: 50%;
-            flex-direction: column;
-            position: relative;
+            align-items: center;
+            justify-items: center;
 
-            .contacto2-cont {
-                position: absolute;
-                left: 25%;
-                top: 40%;
-                width: 50%;
-                text-align: center;
+            .bloque-contacto2 {
+                height: 60%;
+                width: 80%;
+                margin: auto;
 
-                    .twitter {
-                        margin: 0 0.625rem 0.625rem 0.625rem;
-                        padding: 1.25rem 0;
-                        border-bottom: 0.125rem solid whitesmoke;
-                        border-top: 0.125rem solid whitesmoke;
-                            h3 {
-                                margin-bottom: 0.3125rem;
-                                color: $color-blanco;
-                            }
-                    }
+                section:hover {
+                    background-color: rgb(70, 67, 67);
+                }
+            
+                .twitter {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    width: 80%;
+                    height: 80%;
+                    transition: 1s;
+                    border-radius: 1rem;
 
-                    .mail {
-                        margin: 0.625rem;
-                        padding: 1.25rem 0;
-                        border-bottom: 0.125rem solid whitesmoke;
-                            h3 {
-                                margin-bottom: 0.3125rem;
-                                color: $color-blanco;
-                            }
-                    }
+                    
 
-                    .llamada {
-                        margin: 0.625rem;
-                        padding: 1.25rem 0;
-                        border-bottom: 0.125rem solid whitesmoke;
-                            h3 {
-                                margin-bottom: 0.3125rem;
-                                color: $color-blanco;
-                            }
-                    }
-
-                        .hover-contacto:hover {
-                            color: $hover-header;
+                        h3 {
+                            margin: auto;
+                            color: $color-blanco;
                         }
-            }    
-        
+
+                        a {
+                            margin: auto;
+                        }
+                    
+                }
+
+                .mail {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    width: 80%;
+                    height: 80%;
+                    transition: 1s;
+                    border-radius: 1rem;
+
+                    
+
+                        h3 {
+                            margin: auto;
+                            color: $color-blanco;
+                        }
+
+                        a {
+                            margin: auto;
+                        }
+                }
+
+                .llamada {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    width: 80%;
+                    height: 80%;
+                    transition: 1s;
+                    border-radius: 1rem;
+
+                    
+
+                        h3 {
+                            margin: auto;
+                            color: $color-blanco;
+                        }
+
+                        a {
+                            margin: auto;
+                            font-size: .6rem;
+                        }
+                }
+
+                .hover-contacto:hover {
+                    color: $color-amarillo;
+                }
+            }
+
         }
+
+}
+
+// media queries
+
+@media (max-width: 650px) {
+
+    .container-contacto {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 2rem;
+        grid-template-areas: 
+            "container-contacto1"
+            "container-contacto2";
+
+            .container-contacto1 {
+                margin-top: 2rem;
+                min-width: 100%;
+
+                h2{
+                    margin-bottom: 1rem;
+                }
+
+            }
+
+            .container-contacto2 {
+                margin-bottom: 1rem;
+                height: 20rem;
+            
+                .bloque-contacto2 {
+                    margin: 0 auto;
+                    height: 100%;
+                    grid-row-gap: 1rem;
+
+                }
+            }
+
+
+    }
+
+
+
+    .container-contacto1{
+        grid-area: container-contacto1;
+    }
+    
+    .container-contacto2{
+        grid-area: container-contacto2;
+    } 
 }
 

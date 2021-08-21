@@ -2,7 +2,7 @@
 
 .body-accesorios {
     display: grid;
-    grid-template-rows: 60px 1fr 60px;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas: 
         "header-accesorios"
         "contenido-accesorios"
@@ -60,14 +60,6 @@
             h2 {
                 margin-bottom: 2rem;
             }
-            
-            .sub-lista {
-                padding-left: 1rem;
-                
-                    li {
-                        font-size: 1rem;
-                    }
-            }
 
             li {
                 font-size: 1.2rem;
@@ -77,6 +69,10 @@
                 
                     a {
                         color: black;
+
+                        &:hover{
+                            color: $color-amarillo;
+                        }
                     }
             }
     }
@@ -87,8 +83,6 @@
 
         .producto-container {
             padding: 1rem;
-            // max-width: 500px;
-            // max-height: 600px;
             display: flex;
             flex-direction: column;
             cursor: pointer;
@@ -144,3 +138,171 @@
         }
     }
 }
+
+// media queries
+
+@media (max-width: 1160px) {
+
+    .contenido-accesorios {
+
+        .accesorios-grid{
+
+            .menu-filtros-accesorios {
+
+                margin: 3rem 0 3rem .8rem;
+
+                h2 {
+                    font-size: 80%;
+                }
+
+                ul {
+
+                    li {
+                        font-size: 1rem;
+
+                    }
+        
+
+                }
+
+            }
+
+        }
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+
+
+// grid
+    .accesorios-grid {
+    
+            .catalogo-prendas-accesorios {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: .5rem;
+                grid-row-gap: .8rem;
+                justify-items: stretch;
+            }
+    }
+
+    .contenido-accesorios {
+
+        .accesorios-grid{
+
+            .menu-filtros-accesorios {
+
+                margin: 3rem 0 3rem .8rem;
+
+                h2 {
+                    font-size: 70%;
+                }
+
+                ul {
+
+                    li {
+                        font-size: .9rem;
+
+                    }        
+
+                }
+
+            }
+
+            .catalogo-prendas-accesorios {
+                .producto-container{
+                    h3{
+                        font-size: .8rem;
+                    }
+                }
+            }
+
+        }
+    }
+
+
+
+}
+
+
+@media (max-width: 540px) {
+
+
+    // grid
+    .body-accesorios {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+            "header-accesorios"
+            "contenido-accesorios"
+            "footer-accesorios";
+    }
+    
+    .accesorios-grid {
+
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "menu-filtros-accesorios"
+        "catalogo-prendas-accesorios";
+
+    
+            .catalogo-prendas-accesorios {
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: .5rem;
+                grid-row-gap: .8rem;
+            }
+    }
+
+    .header-accesorios {
+        grid-area: header-accesorios;
+    }
+    
+    .contenido-accesorios {
+        grid-area: contenido-accesorios;
+    }
+    
+    .footer-accesorios {
+        grid-area: footer-accesorios;
+    }
+    
+    .menu-filtros-accesorios {
+        grid-area: menu-filtros-accesorios;
+    }
+    
+    .catalogo-prendas-accesorios {
+        grid-area: catalogo-prendas-accesorios;
+    }
+    
+
+    // estilos
+
+    .body-accesorios {
+        .contenido-accesorios{
+            .accesorios-grid{
+                .menu-filtros-accesorios{
+                    margin: 1rem auto;
+
+                    h2 {
+                        margin: 0;
+                        font-size: 2rem;
+                    }
+
+                    
+                    ul {
+                        display: none;
+                    }
+                }
+                .catalogo-prendas-accesorios{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+
+}
+    
+    

@@ -1,7 +1,7 @@
 
 header {
     background-color: black;
-    padding: .625rem;
+    padding: .625rem 1.625rem;
     height: 60px;
     width: 100%;
 
@@ -22,7 +22,7 @@ header {
                 }
             }
     
-            .boton-menu {
+            .boton-menu-hamb, .boton-menu-hamb-input {
                 display: none;
                 color: $color-blanco;
             }
@@ -84,7 +84,7 @@ header {
 
 @media (max-width: 768px) {
     
-    .header-home{
+    header{
         position: relative;
         
         .header-container {
@@ -98,7 +98,10 @@ header {
                 height: 200px;
                 width: 50%;
                 top: 60px;
-                right: 0%;
+                right: 700%;
+                
+                
+                
                 
                 
                 
@@ -118,10 +121,15 @@ header {
                 display: none;
             }
             
-            .boton-menu {
+            .boton-menu-hamb-input{
+                display: none;
+            }
+
+            .boton-menu-hamb {
                 flex-basis: 10%;
                 display: block;
                 text-align: center;
+                cursor: pointer;
                 
                 
                     i {
@@ -134,16 +142,16 @@ header {
                     }
 
                     #boton-menu-hamb {
-                        // display: none;
+                        display: none;
                         
-                        &input:checked ~ .menu__lista {
-                            background-color: whitesmoke;
-                            
-                        }
-                    }
-
                     
+                }
+            }
+
+            #boton-menu-hamb:checked ~ .menu {
+                right: 0;
             }
         }
     }
+
 }

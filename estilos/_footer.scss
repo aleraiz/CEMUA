@@ -2,8 +2,9 @@ footer {
     background-color: black;
     display: flex;
     justify-content: space-around;
-    padding: .625rem ;
-    height: 50px;
+    padding: .625rem 1.625rem;
+    min-height: 50px;
+    height: auto;
     width: 100%;
     align-items: center;
     
@@ -53,4 +54,51 @@ footer {
                 }
         }
     }
+}
+
+// media queries
+
+@media (max-width: 768px) {
+    footer {
+    
+        flex-direction: column;
+        min-height: 100px;
+        
+
+        .footer__derechos {
+            order:1;
+            margin: 1rem 0;
+            
+            .footer__texto {
+                font-size: .6rem;
+            }
+        }
+
+        .footer__menu {
+            margin: 1rem 0;
+            padding-top: .5rem;
+            
+
+        }
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    footer {
+    
+        .footer__menu {
+
+            .footer__lista {
+                
+                a {
+                    font-size: .8rem;
+                }
+
+            }
+        }
+
+    }
+
 }
